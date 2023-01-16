@@ -43,7 +43,7 @@
 	</body>
 	<script>
 					function volCalc() {
-						let r = parseInt(document.getElementById("Radius").value);
+						let r = document.getElementById("Radius").value;
 						let pi = Math.PI; <!-- I imported Pi because I'm a stickler for accuracy-->
 						let calc = (4/3*pi*(r**3));
 						document.getElementById("Volume").innerHTML = calc;	
