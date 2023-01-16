@@ -24,6 +24,9 @@
 				<p class="text-center">Input radius value and get the volume of a sphere.</p>
 				<p>Radius</p>
 				<div class="col-md-6">
+					<!-- Didn't need to do the form class here but I thought it looked better
+					I don't actually know what the "required" does but it was part of the tutorial html
+					for the forms and I'm not risking deleting it since it works!-->
 					<input type="text" id="Radius" class="form-control" required />
 				</div>
 				<br>
@@ -41,10 +44,13 @@
 	<script>
 					function volCalc() {
 						let r = parseInt(document.getElementById("Radius").value);
-						let pi = Math.PI;
+						let pi = Math.PI; <!-- I imported Pi because I'm a stickler for accuracy-->
 						let calc = (4/3*pi*(r**3));
 						document.getElementById("Volume").innerHTML = calc;	
 						console.log(calc);
 					}
 	</script>
 </html>
+
+<!-- Things I'd improve if I ever got the inclination to look at this again would be to include units and
+round the numbers on the output-->
